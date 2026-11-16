@@ -1,0 +1,84 @@
+/* 1. 基礎重置與變數 */
+:root {
+  --primary: #D9534F;
+  --bg-main: #FAF8F5;
+  --bg-card: #FFFFFF;
+  --text-main: #2C2C2C;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 2. 導覽列 Navbar */
+.navbar {
+  background: var(--bg-card);
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #EAE6DF;
+}
+.nav-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-brand { color: var(--primary); font-weight: bold; text-decoration: none; }
+.nav-link { color: var(--text-main); text-decoration: none; }
+
+/* 3. 版面容器 */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* 4. 首頁與卡片網格 */
+.hero {
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* 5. 內頁與按鈕 */
+.article-box {
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: 8px;
+}
+.tag {
+  background: #FDF2F2;
+  color: var(--primary);
+  padding: 0.2rem 0.5rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+}
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 1rem;
+  text-align: center;
+}
